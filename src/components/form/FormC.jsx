@@ -40,7 +40,7 @@ const FormC = () => {
     setError("");
 
     if (rol === "medico") {
-      navigate("/turnero");
+      navigate("/Turnos");
     } else {
       navigate("/Inicio"); 
     }

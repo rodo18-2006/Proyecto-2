@@ -1,4 +1,4 @@
-import { BrowserRouter as Router, Routes, Route } from "react-router";
+import { BrowserRouter as Router, Routes, Route, Navigate } from "react-router";
 import HomePage from "./page/HomePage";
 import LoginPage from "./page/LoginPage";
 import Error404 from "./page/error404/Error404";
@@ -12,7 +12,7 @@ const App = () => {
     <>
       <Router>
         <Routes>
-          <Route path="/Login" element={<LoginPage />} />
+          <Route path="/" element={<LoginPage/>} />
           <Route path="/Turnos" element={<Turnos />}/> 
           <Route path="/Inicio" element={<HomePage />} />
           <Route path="*" element={<Error404 />} />
