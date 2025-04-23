@@ -1,0 +1,150 @@
+/* 
+.turnero-container {
+  background-color: #f4f4f9;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 600px;
+  margin: 50px auto;
+  text-align: center;
+}
+
+
+.titulo {
+  font-size: 2rem;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+
+.input-turno {
+  padding: 10px;
+  width: 80%;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+  font-size: 1rem;
+}
+
+.input-turno:focus {
+  border-color: #00bcd4;
+  outline: none;
+}
+
+.btn-agregar, .btn-siguiente {
+  background-color: #00bcd4;
+  color: white;
+  padding: 12px 30px;
+  border: none;
+  border-radius: 25px;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.btn-agregar:hover, .btn-siguiente:hover {
+  background-color: #0097a7;
+  transform: scale(1.05);
+}
+
+.turno-actual {
+  font-size: 1.5rem;
+  color: #333;
+  margin-top: 20px;
+}
+
+
+.lista-turnos {
+  list-style: none;
+  padding: 0;
+  margin-top: 20px;
+}
+
+.turno-item {
+  background-color: #f1f1f1;
+  padding: 10px;
+  margin: 5px 0;
+  border-radius: 8px;
+  font-size: 1rem;
+  color: #333;
+  transition: background-color 0.3s ease;
+}
+
+.turno-item:hover {
+  background-color: #00bcd4;
+  color: white;
+}
+ */
+
+
+
+ /* Segundo diseño de turnero */
+  /* Aplica al contenedor padre para centrar vertical y horizontalmente */
+
+
+.turnero-container {
+  width: 80%;
+  margin: 15px auto;
+  padding: 50px;
+  background-color: #f4f8fb;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+  text-align: center;
+  color: #2d3e50;
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-control {
+  width: 100%;
+  padding: 10px;
+  margin-top: 10px;
+  border-radius: 5px;
+  border: 1px solid #ced4da;
+  font-size: 16px;
+}
+
+.form-control:focus {
+  outline: none;
+  border-color: #6c757d;
+  box-shadow: 0 0 5px rgba(100, 100, 100, 0.3);
+}
+
+.btn-agregar {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.btn-agregar:hover {
+  background-color: #0056b3;
+}
+
+.turnos-lista {
+  list-style-type: none;
+  padding: 0;
+}
+
+.turno-item {
+  background-color: #e9ecef;
+  padding: 30px;
+  margin: 5px 0;
+  border-radius: 5px;
+  font-size: 18px;
+}
+
+.turno-item:nth-child(even) {
+  background-color: #f1f3f5;
+}

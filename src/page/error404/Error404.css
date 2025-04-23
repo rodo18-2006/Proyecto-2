@@ -1,0 +1,29 @@
+.Error404-container {
+  text-align: center;
+  padding: 80px 20px;
+}
+
+.Error404-title {
+  font-size: 3rem;
+  color: #d9534f;
+}
+
+.Error404-text {
+  font-size: 1.2rem;
+  margin-top: 10px;
+}
+
+.Error404-btn {
+  display: inline-block;
+  margin-top: 30px;
+  padding: 10px 20px;
+  background-color: #0275d8;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.Error404-btn:hover {
+  background-color: #025aa5;
+}
