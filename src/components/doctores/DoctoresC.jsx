@@ -18,7 +18,7 @@ const DoctoresC = () => {
             propioceptivos y planes de rehabilitación adaptados al deporte de
             cada paciente.
           </Card.Text>
-          <Button  variant="success">Solicitar Turno</Button>
+          <Button variant="success">Solicitar Turno</Button>
         </Card.Body>
       </Card>
 
@@ -34,7 +34,7 @@ const DoctoresC = () => {
             y la mejora motora. Trabaja en estrecha colaboración con neurólogos
             y terapeutas ocupacionales para diseñar programas integrales.
           </Card.Text>
-          <Button  variant="success">Solicitar Turno</Button>
+          <Button variant="success">Solicitar Turno</Button>
         </Card.Body>
       </Card>
 
@@ -48,7 +48,7 @@ const DoctoresC = () => {
             congelado, tendinopatías y rehabilitación tras artroplastias,
             enfocándose siempre en la funcionalidad y el alivio del dolor.
           </Card.Text>
-          <Button  variant="success">Solicitar Turno</Button>
+          <Button variant="success">Solicitar Turno</Button>
         </Card.Body>
       </Card>
 
@@ -65,7 +65,7 @@ const DoctoresC = () => {
             drenaje bronquial para mejorar la capacidad respiratoria y la
             tolerancia al esfuerzo.
           </Card.Text>
-          <Button  variant="success">Solicitar Turno</Button>
+          <Button variant="success">Solicitar Turno</Button>
         </Card.Body>
       </Card>
 
@@ -81,7 +81,7 @@ const DoctoresC = () => {
             sensoriomotora y ejercicios lúdicos para promover hitos del
             desarrollo y mejorar la coordinación.
           </Card.Text>
-          <Button  variant="success">Solicitar Turno</Button>
+          <Button variant="success">Solicitar Turno</Button>
         </Card.Body>
       </Card>
 
@@ -95,7 +95,7 @@ const DoctoresC = () => {
             incluye también manejo del dolor crónico articular y programas para
             mejorar la postura y la fuerza funcional.
           </Card.Text>
-          <Button  variant="success">Solicitar Turno</Button>
+          <Button variant="success">Solicitar Turno</Button>
         </Card.Body>
       </Card>
     </>
