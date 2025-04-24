@@ -1,18 +1,21 @@
 import React from "react";
-import { Card, Container, Row, Col } from "react-bootstrap";
+import { Card, Container, Row, Col, Button } from "react-bootstrap";
+import { useNavigate } from "react-router-dom";
 import "./Horario.css"
 
 const HorariosC = () => {
+  const navigate = useNavigate();
+
   const profesionales = [
     {
-      nombre: "Dra. Valentia Ríos ",
+      nombre: "Dra. Valentia Ríos",
       especialidad: "Fisioterapia Deportiva",
       dias: "Lunes, Miércoles y Viernes",
       horario: "08:00 a 12:00 hs",
     },
     {
       nombre: "Dr. Esteban Morales",
-      especialidad: "Fisioterapia Neurológica",
+      especialidad: " Fisioterapia Neurológica",
       dias: "Martes y Jueves",
       horario: "14:00 a 18:00 hs",
     },
@@ -23,24 +26,25 @@ const HorariosC = () => {
       horario: "09:00 a 13:00 hs",
     },
     {
-      nombre: " Dr. Rodrigo Santos ",
-      especialidad: "Rehabilitación Cardiopulmonar",
+      nombre: " Dra. Laura Fernández",
+      especialidad: "Fisioterapia Pediátrica",
       dias: "Lunes, Miércoles y Viernes",
       horario: "15:00 a 19:00 hs",
     },
     {
-      nombre: " Dra. Laura Fernández",
-      especialidad: "Fisioterapia Pediátrica",
-      dias: "Martes y Jueves",
-      horario: "08:00 a 12:00 hs",
-    },
-    {
-      nombre: " Dr. Martín Castillo ",
+      nombre: "Dr. Martín Castillo ",
       especialidad: "Fisioterapia Geriátrica",
       dias: "Martes y Jueves",
       horario: "08:00 a 12:00 hs",
     },
+    {
+      nombre: " Dr. Rodrigo Santos",
+      especialidad: " Rehabilitación Cardiopulmonar",
+      dias: "Martes y Jueves",
+      horario: "08:00 a 12:00 hs",
+    },
   ];
+
 
   return (
     <Container className="mt-5">
@@ -58,6 +62,13 @@ const HorariosC = () => {
                   <strong>Días de Atención:</strong> {doctor.dias} <br />
                   <strong>Horario:</strong> {doctor.horario}
                 </Card.Text>
+                <Button
+                  variant="primary"
+                  className="w-100"
+                  onClick={() => navigate("/Turnos")}
+                >
+                  Solicitar Turno
+                </Button>
               </Card.Body>
             </Card>
           </Col>
