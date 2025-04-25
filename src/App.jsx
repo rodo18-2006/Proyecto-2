@@ -7,6 +7,7 @@ import NavbarC from "./components/navbar/NavbarC";
 import Inicio from "./components/Inicio/InicioC";
 import Turnos from "./page/Turnos";
 import Hora from "./page/Hora";
+import Listadodepacientes from "./page/Listadodepacientes";
 
 
 const App = () => {
@@ -20,6 +21,7 @@ const App = () => {
           <Route path="*" element={<Error404 />} />
           <Route path="/Doctores" element={<Doctores />} />
          <Route path="/Horarios" element={<Hora />}/>
+         <Route path="/Pacientes" element={<Listadodepacientes />} />
         </Routes>
       </Router>
     </>

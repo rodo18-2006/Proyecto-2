@@ -8,12 +8,7 @@ import { Link } from "react-router-dom";
 
 const HorariosC = () => {
   const profesionales = [
-    {
-      nombre: " Dr. Esteban Morales",
-      especialidad: "Fisioterapia Neurológica",
-      dias: "Lunes, Miércoles y Viernes",
-      horario: "15:00 a 19:00 hs",
-    },
+   
     {
       nombre: "  Dra. Valentia Ríos",
       especialidad: " Fisioterapia Deportiva",

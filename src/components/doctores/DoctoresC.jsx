@@ -30,26 +30,6 @@ const DoctoresC = () => {
           </Card>
         </Col>
 
-        <Col md={6} lg={4} className="mb-4">
-          <Card className="caard">
-            <Card.Body>
-              <Card.Title>
-                Dr. Esteban Morales - Fisioterapia Neurológica
-              </Card.Title>
-              <Card.Text>
-                Especializado en rehabilitación post‐accidente cerebrovascular y
-                enfermedades neurodegenerativas, el Dr. Morales utiliza el
-                enfoque Bobath y la terapia de espejo para favorecer la
-                plasticidad cerebral y la mejora motora. Trabaja en estrecha
-                colaboración con neurólogos y terapeutas ocupacionales para
-                diseñar programas integrales.
-              </Card.Text>
-             <Link to="/Turnos" className="btn btn-primary">
-                  Solicitar Turno
-                </Link>
-            </Card.Body>
-          </Card>
-        </Col>
 
         <Col md={6} lg={4} className="mb-4">
           <Card className="caard">
