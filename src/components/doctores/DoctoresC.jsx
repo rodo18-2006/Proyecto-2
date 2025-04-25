@@ -2,6 +2,7 @@ import Button from "react-bootstrap/Button";
 import "bootstrap/dist/css/bootstrap.min.css";
 import Card from "react-bootstrap/Card";
 import { Container, Row, Col } from "react-bootstrap";
+import { Link } from "react-router-dom";
 import "./Doctores.css";
 
 const DoctoresC = () => {
@@ -22,7 +23,9 @@ const DoctoresC = () => {
                 manual, ejercicios propioceptivos y planes de rehabilitación
                 adaptados al deporte de cada paciente.
               </Card.Text>
-              <Button variant="success">Solicitar Turno</Button>
+             <Link to="/Turnos" className="btn btn-primary">
+                  Solicitar Turno
+                </Link>
             </Card.Body>
           </Card>
         </Col>
@@ -41,7 +44,9 @@ const DoctoresC = () => {
                 colaboración con neurólogos y terapeutas ocupacionales para
                 diseñar programas integrales.
               </Card.Text>
-              <Button variant="success">Solicitar Turno</Button>
+             <Link to="/Turnos" className="btn btn-primary">
+                  Solicitar Turno
+                </Link>
             </Card.Body>
           </Card>
         </Col>
@@ -60,7 +65,9 @@ const DoctoresC = () => {
                 rehabilitación tras artroplastias, enfocándose siempre en la
                 funcionalidad y el alivio del dolor.
               </Card.Text>
-              <Button variant="success">Solicitar Turno</Button>
+             <Link to="/Turnos" className="btn btn-primary">
+                  Solicitar Turno
+                </Link>
             </Card.Body>
           </Card>
         </Col>
@@ -79,7 +86,9 @@ const DoctoresC = () => {
                 colaboración con neurólogos y terapeutas ocupacionales para
                 diseñar programas integrales.
               </Card.Text>
-              <Button variant="success">Solicitar Turno</Button>
+             <Link to="/Turnos" className="btn btn-primary">
+                  Solicitar Turno
+                </Link>
             </Card.Body>
           </Card>
         </Col>
@@ -98,7 +107,9 @@ const DoctoresC = () => {
                 técnicas de drenaje bronquial para mejorar la capacidad
                 respiratoria y la tolerancia al esfuerzo.
               </Card.Text>
-              <Button variant="success">Solicitar Turno</Button>
+             <Link to="/Turnos" className="btn btn-primary">
+                  Solicitar Turno
+                </Link>
             </Card.Body>
           </Card>
         </Col>
@@ -116,7 +127,9 @@ const DoctoresC = () => {
                 estimulación sensoriomotora y ejercicios lúdicos para promover
                 hitos del desarrollo y mejorar la coordinación.
               </Card.Text>
-              <Button variant="success">Solicitar Turno</Button>
+             <Link to="/Turnos" className="btn btn-primary">
+                  Solicitar Turno
+                </Link>
             </Card.Body>
           </Card>
         </Col>
