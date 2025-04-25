@@ -1,58 +1,64 @@
-import React from "react";
+
+
+    import React from "react";
 import { Card, Container, Row, Col, Button } from "react-bootstrap";
-import { useNavigate } from "react-router-dom";
-import "./Horario.css"
+import "./Horarios.css"
+import { Link } from "react-router-dom";
+
 
 const HorariosC = () => {
-  const navigate = useNavigate();
-
   const profesionales = [
     {
-      nombre: "Dra. Valentia Ríos",
-      especialidad: "Fisioterapia Deportiva",
-      dias: "Lunes, Miércoles y Viernes",
-      horario: "08:00 a 12:00 hs",
-    },
-    {
-      nombre: "Dr. Esteban Morales",
-      especialidad: " Fisioterapia Neurológica",
-      dias: "Martes y Jueves",
-      horario: "14:00 a 18:00 hs",
-    },
-    {
-      nombre: "Dra. Camila Herrera",
-      especialidad: "Fisioterapia Ortopédica",
-      dias: "Lunes a Viernes",
-      horario: "09:00 a 13:00 hs",
-    },
-    {
-      nombre: " Dra. Laura Fernández",
-      especialidad: "Fisioterapia Pediátrica",
+      nombre: " Dr. Esteban Morales",
+      especialidad: "Fisioterapia Neurológica",
       dias: "Lunes, Miércoles y Viernes",
       horario: "15:00 a 19:00 hs",
     },
     {
-      nombre: "Dr. Martín Castillo ",
-      especialidad: "Fisioterapia Geriátrica",
-      dias: "Martes y Jueves",
+      nombre: "  Dra. Valentia Ríos",
+      especialidad: " Fisioterapia Deportiva",
+      dias: "Lunes, Miércoles y Viernes",
       horario: "08:00 a 12:00 hs",
+    },
+
+    {
+      nombre: " Dra. Camila Herrera",
+      especialidad: "Fisioterapia Ortopédica",
+      dias: "Lunes a Viernes",
+      horario: "09:00 a 13:00 hs",
+    },
+
+    {
+      nombre: " Dr. Esteban Morales",
+      especialidad: "Fisioterapia Neurológica",
+      dias: "Martes y Jueves",
+      horario: "14:00 a 18:00 hs",
     },
     {
       nombre: " Dr. Rodrigo Santos",
-      especialidad: " Rehabilitación Cardiopulmonar",
+      especialidad: "Rehabilitación Cardiopulmonar",
+      dias: "Martes y Jueves",
+      horario: "08:00 a 12:00 hs",
+    },
+
+    {
+      nombre: " Dra. Laura Fernández",
+      especialidad: "Fisioterapia Pediátrica",
       dias: "Martes y Jueves",
       horario: "08:00 a 12:00 hs",
     },
   ];
 
-
   return (
-    <Container className="mt-5">
-      <h2 className="text-center mb-4">Cartelera de Horarios</h2>
+    <Container className="doctores mt-5">
+      <h2 className="text-center mb-4">Cartelera de Profesionales</h2>
       <Row>
         {profesionales.map((doctor, index) => (
           <Col key={index} md={6} lg={4} className="mb-4">
-            <Card style={{ boxShadow: "0 0 8px rgba(0,0,0,0.1)" }}>
+            <Card
+              className="hora"
+              style={{ boxShadow: "0 0 8px rgba(0,0,0,0.1)" }}
+            >
               <Card.Body>
                 <Card.Title>{doctor.nombre}</Card.Title>
                 <Card.Subtitle className="mb-2 text-muted">
@@ -62,13 +68,9 @@ const HorariosC = () => {
                   <strong>Días de Atención:</strong> {doctor.dias} <br />
                   <strong>Horario:</strong> {doctor.horario}
                 </Card.Text>
-                <Button
-                  variant="primary"
-                  className="w-100"
-                  onClick={() => navigate("/Turnos")}
-                >
+                <Link to="/Turnos" className="btn btn-primary">
                   Solicitar Turno
-                </Button>
+                </Link>
               </Card.Body>
             </Card>
           </Col>

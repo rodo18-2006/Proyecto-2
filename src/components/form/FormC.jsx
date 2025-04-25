@@ -19,7 +19,7 @@ const FormC = () => {
     repetir: "",
   });
   const [error, setError] = useState("");
-  const navigate = useNavigate(); 
+  const navigate = useNavigate();
 
   const handleChange = (e) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
@@ -42,12 +42,12 @@ const FormC = () => {
     if (rol === "medico") {
       navigate("/Turnos");
     } else {
-      navigate("/Inicio"); 
+      navigate("/Inicio");
     }
   };
 
   return (
-    <Container className="d-flex justify-content-center align-items-center vh-100">
+    <Container className="form  d-flex justify-content-center align-items-center min-vh-100">
       <Card
         style={{
           padding: "1rem",

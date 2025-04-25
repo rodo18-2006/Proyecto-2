@@ -10,7 +10,7 @@ const NavbarC = () => {
     <>
       <Navbar expand="lg" className="navbar" collapseOnSelect>
         <Container>
-          <img  className="logo" src="./img/logo-clinica.png" alt="logo" />
+          <img className="logo" src="./img/logo-clinica.png" alt="logo" />
           <Navbar.Brand href="/inicio">Inicio</Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">

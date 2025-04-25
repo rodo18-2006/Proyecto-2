@@ -6,7 +6,8 @@ import Doctores from "./page/Doctores";
 import NavbarC from "./components/navbar/NavbarC";
 import Inicio from "./components/Inicio/InicioC";
 import Turnos from "./page/Turnos";
-import Horarios from "./page/Horarios";
+import Hora from "./page/Hora";
+
 
 const App = () => {
   return (
@@ -18,7 +19,7 @@ const App = () => {
           <Route path="/Inicio" element={<HomePage />} />
           <Route path="*" element={<Error404 />} />
           <Route path="/Doctores" element={<Doctores />} />
-          <Route path="/Horarios" element={<Horarios />}/>
+         <Route path="/Horarios" element={<Hora />}/>
         </Routes>
       </Router>
     </>
