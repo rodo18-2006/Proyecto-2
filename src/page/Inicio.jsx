@@ -6,13 +6,13 @@ import NavbarC from "../components/navbar/NavbarC"
 
 const Inicio = () => {
   
-  return(
+  return (
     <>
-    <InicioC />
-    <NavbarC />
-    <FooterC />
+      <NavbarC />
+      <InicioC />
+      <FooterC />
     </>
-  )
+  );
 }
 
 export default Inicio

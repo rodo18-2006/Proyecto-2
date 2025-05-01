@@ -30,6 +30,9 @@ const FormC = () => {
     "Dra. Laura Fernández": "lau654",
   };
 
+
+  
+
   const handleChange = (e) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
     if (e.target.name === "contraseña" || e.target.name === "repetir") {

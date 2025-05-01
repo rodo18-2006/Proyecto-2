@@ -1,13 +1,8 @@
 import React, { useState } from "react";
 import { Button, Card, Container, Alert } from "react-bootstrap";
 
-const ListaPacientesC = () => {
-  const [pacientes, setPacientes] = useState([
-    { nombre: "Juan Pérez" },
-    { nombre: "Ana Gómez" },
-    { nombre: "Luis Rodríguez" },
-    { nombre: "Marta López" },
-  ]);
+
+const ListaPacientesC = ({ pacientes, setPacientes }) => {
   const [nombre, setNombre] = useState("");
   const [error, setError] = useState("");
 
@@ -17,9 +12,16 @@ const ListaPacientesC = () => {
       return;
     }
 
+    
+    const existe = pacientes.some((p) => p.nombre === nombre);
+    if (existe) {
+      setError("Este paciente ya está registrado.");
+      return;
+    }
+
     setPacientes([...pacientes, { nombre }]);
-    setNombre(""); 
-    setError(""); 
+    setNombre("");
+    setError("");
   };
 
   const eliminarPaciente = (index) => {
@@ -28,7 +30,7 @@ const ListaPacientesC = () => {
   };
 
   return (
-    <Container className="d-flex justify-content-center align-items-center min-vh-100">
+    /*  <Container className="d-flex justify-content-center align-items-center min-vh-100">
       <Card
         style={{
           padding: "1rem",
@@ -41,7 +43,6 @@ const ListaPacientesC = () => {
 
         {error && <Alert variant="danger">{error}</Alert>}
 
-        
         <div className="mb-3">
           <input
             type="text"
@@ -75,7 +76,15 @@ const ListaPacientesC = () => {
           ))}
         </ul>
       </Card>
-    </Container>
+    </Container> */
+    <div>
+      <h2>Lista de Pacientes</h2>
+      <ul>
+        {pacientes.map((paciente, index) => (
+          <li key={index}>{paciente.nombre}</li>
+        ))}
+      </ul>
+    </div>
   );
 };
 

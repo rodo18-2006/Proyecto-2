@@ -1,7 +1,9 @@
 import React, { useState } from "react";
 import "./Turnero.css";
 
-const TurneroC = () => {
+const TurneroC = ({ pacientes, setPacientes }) => {
+ 
+    
   const [turnos, setTurnos] = useState([]);
   const [nombre, setNombre] = useState("");
   const [dni, setDni] = useState("");
@@ -14,31 +16,35 @@ const TurneroC = () => {
     "Dra. Valentia Ríos - Fisioterapia Deportiva",
     "Dr. Esteban Morales - Fisioterapia Neurológica",
     "Dra. Camila Herrera - Fisioterapia Ortopédica",
-    "Dr. Esteban Morales - Fisioterapia Neurológica",
     "Dr. Rodrigo Santos - Rehabilitación Cardiopulmonar",
     "Dra. Laura Fernández – Fisioterapia Pediátrica",
   ];
 
-  const agregarTurno = () => {
-    if (
-      nombre.trim() !== "" &&
-      dni.trim() !== "" &&
-      doctor !== "" &&
-      motivo.trim() !== "" &&
-      fecha &&
-      hora
-    ) {
-      setTurnos([...turnos, { nombre, dni, doctor, motivo, fecha, hora }]);
-      // Limpiar campos
-      setNombre("");
-      setDni("");
-      setDoctor("");
-      setMotivo("");
-      setFecha("");
-      setHora("");
-    } else {
-      alert("Por favor completá todos los campos.");
-    }
+   const agregarTurno = () => {
+    // Después de agregar el turno, agregar al paciente a la lista
+    setPacientes([...pacientes, { nombre }]);
+
+  
+     if (
+       nombre.trim() !== "" &&
+       dni.trim() !== "" &&
+       doctor !== "" &&
+       motivo.trim() !== "" &&
+       fecha &&
+       hora
+     ) {
+       // Aquí debes usar "nombre" y no "nombrePaciente"
+       setTurnos([...turnos, { nombre, dni, doctor, motivo, fecha, hora }]);
+
+       setNombre(""); // Limpiar campos
+       setDni("");
+       setDoctor("");
+       setMotivo("");
+       setFecha("");
+       setHora("");
+     } else {
+       alert("Por favor completá todos los campos.");
+     }
   };
 
   return (
@@ -108,7 +114,7 @@ const TurneroC = () => {
         />
       </div>
 
-      <button onClick={agregarTurno} className="btn-agregar">
+      <button onClick={agregarTurno} className="btn btn-primary">
         Agregar Turno
       </button>
 
