@@ -15,6 +15,7 @@ const App = () => {
   ]);
 
   return (
+    <>
     <Router>
       <Routes>
         <Route path="/" element={<LoginPage />} />
@@ -38,6 +39,7 @@ const App = () => {
         />
       </Routes>
     </Router>
+    </>
   );
 };
 
