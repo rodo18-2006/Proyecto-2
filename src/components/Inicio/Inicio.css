@@ -1,0 +1,32 @@
+.Card-img {
+    width: 100%;
+    height: 200px; 
+    object-fit: cover; 
+    display: block;
+}
+
+.Carrusel img {
+    width: 100%;
+    height: 650px; 
+    object-fit: cover;
+    display: block;
+  }
+
+  .boton-subir {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color:  aqua ;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 50px;
+    cursor: pointer;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+    z-index: 1000;
+    transition: background-color 0.3s;
+  }
+  
+  .boton-subir:hover {
+    background-color: #0056b3;
+  }
