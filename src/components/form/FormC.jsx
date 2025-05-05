@@ -17,9 +17,21 @@ const FormC = () => {
     email: "",
     contraseña: "",
     repetir: "",
+    doctor: "",
   });
   const [error, setError] = useState("");
-  const navigate = useNavigate(); 
+  const navigate = useNavigate();
+
+  const clavesDoctores = {
+    "Dra. Valentia Ríos": "val123",
+    "Dr. Esteban Morales": "est456",
+    "Dra. Camila Herrera": "cam789",
+    "Dr. Rodrigo Santos": "rod321",
+    "Dra. Laura Fernández": "lau654",
+  };
+
+
+  
 
   const handleChange = (e) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
@@ -36,18 +48,23 @@ const FormC = () => {
       return;
     }
 
+    if (rol === "medico") {
+      const claveCorrecta = clavesDoctores[formData.doctor];
+      if (formData.contraseña !== claveCorrecta) {
+        setError("Clave incorrecta para el médico seleccionado.");
+        return;
+      }
+      navigate("/Pacientes");
+      return;
+    }
+
     console.log("Datos enviados:", formData);
     setError("");
-
-    if (rol === "medico") {
-      navigate("/turnero");
-    } else {
-      navigate("/Inicio"); 
-    }
+    navigate("/Inicio");
   };
 
   return (
-    <Container className="d-flex justify-content-center align-items-center vh-100">
+    <Container className="form d-flex justify-content-center align-items-center min-vh-100">
       <Card
         style={{
           padding: "1rem",
@@ -96,6 +113,25 @@ const FormC = () => {
               autoComplete="username"
             />
           </Form.Group>
+
+          {rol === "medico" && (
+            <Form.Group className="mb-3">
+              <Form.Label>Seleccioná tu nombre</Form.Label>
+              <Form.Select
+                name="doctor"
+                value={formData.doctor}
+                onChange={handleChange}
+                required
+              >
+                <option value="">Seleccionar médico</option>
+                {Object.keys(clavesDoctores).map((nombre, index) => (
+                  <option key={index} value={nombre}>
+                    {nombre}
+                  </option>
+                ))}
+              </Form.Select>
+            </Form.Group>
+          )}
 
           {rol === "paciente" && (
             <Form.Group className="mb-3">
@@ -149,7 +185,9 @@ const FormC = () => {
             type="submit"
             className="w-100"
             disabled={
-              rol === "paciente" && (!formData.contraseña || !formData.repetir)
+              (rol === "paciente" &&
+                (!formData.contraseña || !formData.repetir)) ||
+              (rol === "medico" && (!formData.contraseña || !formData.doctor))
             }
           >
             {rol === "medico" ? "Ingresar como Médico" : "Registrar Paciente"}

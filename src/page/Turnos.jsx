@@ -1,16 +1,15 @@
-import FooterC from "../components/footer/FooterC"
-import NavbarC from "../components/navbar/NavbarC"
-import TurneroC from "../components/Turnero/TurneroC"
+import FooterC from "../components/footer/FooterC";
+import NavbarC from "../components/navbar/NavbarC";
+import TurneroC from "../components/turnero/TurneroC";
 
-
-const Turnos = () => {
+const Turnos = ({ pacientes, setPacientes }) => {
   return (
-   <>
-   <NavbarC />
-   <TurneroC />
-   <FooterC />
-   </>
-  )
-}
+    <>
+      <NavbarC />
+      <TurneroC pacientes={pacientes} setPacientes={setPacientes} />
+      <FooterC />
+    </>
+  );
+};
 
-export default Turnos
+export default Turnos;

@@ -1,18 +1,18 @@
 import FooterC from "../components/footer/FooterC"
-
-import InicioC from "../components/Inicio/InicioC"
+import SobreNosotrosC from "../components/sobrenosotros/SobreNosotrosC" 
 import NavbarC from "../components/navbar/NavbarC"
 
 
-const Inicio = () => {
+const SobreNosotros = () => {
   
   return (
     <>
       <NavbarC />
-      <InicioC />
+      <SobreNosotrosC />
       <FooterC />
     </>
   );
 }
+  
 
-export default Inicio
+export default SobreNosotros

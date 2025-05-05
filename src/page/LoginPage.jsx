@@ -4,8 +4,7 @@ import Inicio from "../components/Inicio/InicioC";
 
 const LoginPage = () => {
   return (
-    <>
-      <Inicio />
+    <> 
       <FormC />
       <FooterC />
     </>
