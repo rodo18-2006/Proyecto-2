@@ -10,6 +10,8 @@ import { useState } from "react";
 import SobreNosotros from "./page/sobrenosotros";
 import Navbar from "./page/Navbar";
 import Contacto from "./page/Contacto";
+import Atencion from "./page/Atencionalcliente";
+import Atencionalcliente from "./page/Atencionalcliente";
 
 
 const App = () => {
@@ -28,6 +30,7 @@ const App = () => {
           element={<Turnos pacientes={pacientes} setPacientes={setPacientes} />}
         />
 
+        <Route path="/atencionalcliente" element={<Atencionalcliente />} />  
         <Route path="/contacto" element={<Contacto />} />  
         <Route path="/navbar" element={<Navbar />} />  
         <Route path="/sobrenosotros" element={<SobreNosotros />} /> 
