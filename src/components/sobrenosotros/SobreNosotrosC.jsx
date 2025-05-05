@@ -8,13 +8,13 @@ const SobreNosotrosC = () => {
       title: "Leonel Salvatierra",
       text: "Leonel tiene 19 años y descubrió la programación mientras exploraba nuevas áreas de interés. Lleva 6 meses estudiando y se ha propuesto avanzar cada vez más en sus conocimientos. Su cumpleaños es el 17 de diciembre. Además de programar, se dedica a la música, con pasión por poner música y crear buenas vibras.",
       image:
-        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRs6V7tqioGsJW8d056dwhXgMx8t7gXR6rngA&s",
+        "./img/foto-leo-salvatierra-programacion.jpg",
     },
     {
       title: "Iganacio Teseira",
       text: "Ignacio es un joven entusiasta de 15 años que comenzó a estudiar programación hace 6 meses. Desde entonces, quiere seguir aprendiendo y crecer en el mundo del desarrollo. Su cumpleaños es el 22 de junio y, además de programar, disfruta tocar la batería, su hobby favorito.",
       image:
-        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRs6V7tqioGsJW8d056dwhXgMx8t7gXR6rngA&s",
+        "./img/Foto-Nacho-programacion.jpg",
     },
   ];
 
