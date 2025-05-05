@@ -58,6 +58,7 @@ const TurneroC = ({ pacientes, setPacientes }) => {
           onChange={(e) => setNombre(e.target.value)}
           placeholder="Nombre completo"
           className="form-control"
+          minLength={85}
         />
       </div>
 
@@ -68,6 +69,7 @@ const TurneroC = ({ pacientes, setPacientes }) => {
           onChange={(e) => setDni(e.target.value)}
           placeholder="Número de Documento"
           className="form-control"
+          maxLength={8}
         />
       </div>
 
@@ -93,6 +95,7 @@ const TurneroC = ({ pacientes, setPacientes }) => {
           placeholder="Motivo de consulta"
           className="form-control"
           rows="2"
+          maxLength={1000}
         />
       </div>
 

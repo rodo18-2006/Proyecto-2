@@ -1,0 +1,47 @@
+.contacto-wrapper {
+    min-height: 80vh; 
+    background-color: #ffffff; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px 20px; 
+    box-sizing: border-box;
+  }
+  
+  .contacto-container {
+    background-color: #f9f9f9;
+    padding: 2rem 3rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    text-align: center;
+    max-width: 600px;
+    width: 100%;
+  }
+  
+  .contacto-container h1 {
+    color: #2c3e50;
+    margin-bottom: 1rem;
+  }
+  
+  .contacto-container p {
+    font-size: 1.1rem;
+    color: #555;
+    margin: 0.5rem 0;
+  }
+  
+  .accordion-wrapper {
+    display: flex;
+    justify-content: center; 
+    padding: 2rem;
+    background-color: #f9f9f9; 
+  }
+  
+  .accordion-wrapper .accordion {
+    width: 350px; 
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  }
+  
+ 
+ 
