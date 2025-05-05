@@ -1,6 +1,4 @@
-
-
-    import React from "react";
+ import React from "react";
 import { Card, Container, Row, Col, Button } from "react-bootstrap";
 import "./Horarios.css"
 import { Link } from "react-router-dom";
