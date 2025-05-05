@@ -29,8 +29,17 @@ const ListaPacientesC = ({ pacientes, setPacientes }) => {
     setPacientes(nuevosPacientes);
   };
 
-  return (
-    /*  <Container className="d-flex justify-content-center align-items-center min-vh-100">
+  return ( 
+    <>
+    <div>
+      <ul>
+        {pacientes.map((paciente, index) => (
+          <li key={index}>{paciente.nombre}</li>
+        ))}
+      </ul>
+    </div>
+
+       <Container className="d-flex justify-content-center align-items-center min-vh-100">
       <Card
         style={{
           padding: "1rem",
@@ -76,15 +85,8 @@ const ListaPacientesC = ({ pacientes, setPacientes }) => {
           ))}
         </ul>
       </Card>
-    </Container> */
-    <div>
-      <h2>Lista de Pacientes</h2>
-      <ul>
-        {pacientes.map((paciente, index) => (
-          <li key={index}>{paciente.nombre}</li>
-        ))}
-      </ul>
-    </div>
+    </Container> 
+    </>
   );
 };
 

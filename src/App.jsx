@@ -7,6 +7,10 @@ import Turnos from "./page/Turnos";
 import Hora from "./page/Hora";
 import Listadodepacientes from "./page/Listadodepacientes";
 import { useState } from "react";
+import SobreNosotros from "./page/sobrenosotros";
+import Navbar from "./page/Navbar";
+import Contacto from "./page/Contacto";
+
 
 const App = () => {
   const [pacientes, setPacientes] = useState([
@@ -20,16 +24,19 @@ const App = () => {
       <Routes>
         <Route path="/" element={<LoginPage />} />
         <Route
-          path="/Turnos"
+          path="/turnos"
           element={<Turnos pacientes={pacientes} setPacientes={setPacientes} />}
         />
 
-        <Route path="/Inicio" element={<HomePage />} />
+        <Route path="/contacto" element={<Contacto />} />  
+        <Route path="/navbar" element={<Navbar />} />  
+        <Route path="/sobrenosotros" element={<SobreNosotros />} /> 
+        <Route path="/inicio" element={<HomePage />} />
         <Route path="*" element={<Error404 />} />
-        <Route path="/Doctores" element={<Doctores />} />
-        <Route path="/Horarios" element={<Hora />} />
+        <Route path="/doctores" element={<Doctores />} />
+        <Route path="/horarios" element={<Hora />} />
         <Route
-          path="/Pacientes"
+          path="/pacientes"
           element={
             <Listadodepacientes
               pacientes={pacientes}
