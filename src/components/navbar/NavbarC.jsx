@@ -21,7 +21,7 @@ const NavbarC = () => {
               <NavDropdown title="Turnos y más" id="basic-nav-dropdown">
                 <NavDropdown.Item as={Link} to="/turnos">Turnos</NavDropdown.Item> 
                 <NavDropdown.Item as={Link} to="/horarios">Horarios</NavDropdown.Item> 
-                <NavDropdown.Item as={Link} to="/atencion">Atención al cliente</NavDropdown.Item> 
+                <NavDropdown.Item as={Link} to="/atencionalcliente">Atención al cliente</NavDropdown.Item> 
                 <NavDropdown.Divider />
                 <NavDropdown.Item as={Link} to="/doctores">Doctores</NavDropdown.Item> 
               </NavDropdown>
